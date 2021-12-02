@@ -190,6 +190,12 @@ body{
     background-color: black;
     /* border: 3px solid  gray; */
     transform: rotate(2deg);
+    width: 100%;
+    height: 100%;
+}
+html{
+    width: 100%;
+    height: 100%;
 }
 .head{
     color: rgba(144, 231, 136, 0.993);
