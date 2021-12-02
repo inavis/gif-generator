@@ -211,11 +211,11 @@ html{
 }
 
 @keyframes example {
-    0%   {transform: rotate(8deg); color: darkolivegreen;opacity:90%;}
-    25%  { transform: rotate(16deg); color: darkgreen;opacity:70%;}
-    50%  {transform: rotate(13deg); color:green;opacity:50%;}
-    75%  { transform: rotate(8deg); color: greenyellow;opacity:30%;}
-    100% {transform: rotate(1deg); color: darkseagreen;opacity: 100%;}
+    0%   {transform: rotate(8deg); color: darkolivegreen;}
+    25%  { transform: rotate(16deg); color: darkgreen;}
+    50%  {transform: rotate(13deg); color:green;}
+    75%  { transform: rotate(8deg); color: greenyellow;}
+    100% {transform: rotate(1deg); color: darkseagreen;}
   }
   .text{
     animation-name: example2;
@@ -224,11 +224,11 @@ html{
     animation-iteration-count: infinite;
 }
   @keyframes example2 {
-    0%   { color: darkolivegreen;}
-    25%  {  color: darkgreen;}
-    50%  { color:green;}
-    75%  {  color: greenyellow;}
-    100% { color: darkseagreen;}
+    0%   { color: rgb(165, 201, 104);}
+    25%  {  color: rgb(91, 201, 91);}
+    50%  { color:rgb(78, 206, 19);}
+    75%  {  color: rgb(138, 224, 9);}
+    100% { color: rgb(123, 255, 0);}
   }
 
   .card{
