@@ -62,7 +62,7 @@
     width: 60%;
     }
     .head{
-        font-size: 18px;
+        font-size: 23px;
        }
        .explanation{
         font-size: 13px;
@@ -84,7 +84,7 @@
     }
   
     .head{
-        font-size: 21px;
+        font-size: 26px;
        }
    
        .explanation{
@@ -104,7 +104,7 @@
     width: 70%;
     }
     .head{
-        font-size: 26px;
+        font-size: 31px;
        }
    
        .explanation{
@@ -125,7 +125,7 @@
     }
    
     .head{
-        font-size: 33px;
+        font-size: 38px;
        }
        .explanation{
         font-size: 16px;
@@ -141,7 +141,7 @@
     width: 80%;
     }
    .head{
-    font-size: 43px;
+    font-size: 48px;
    }
    .explanation{
        font-size: 17px;
@@ -189,7 +189,13 @@
 body{
     background-color: black;
     /* border: 3px solid  gray; */
+    transform: rotate(2deg);
 }
 .head{
     color: rgba(144, 231, 136, 0.993);
+    border-radius: 10px;
+   
 }
+/* .head1{
+    writing-mode: vertical-rl;
+} */
