@@ -12,11 +12,11 @@
 }
 #searchbar:hover{
     cursor: pointer;
-    background-color: rgba(144, 231, 136, 0.993);
+    background-color: rgba(188, 224, 186, 0.993);
 }
 #searchbar:focus{
     border:2px solid gray;
-    background-color: rgba(144, 231, 136, 0.993);
+    background-color: rgba(188, 224, 186, 0.993);
 }
 
 #searchbar:disabled{
@@ -33,7 +33,7 @@
 
 }
 .searchbtn:hover{
-    background-color: rgba(144, 231, 136, 0.993);
+    background-color: rgba(188, 224, 186, 0.993);
 }
 .searchbtn:disabled{
     background-color: rgb(209, 202, 202);
