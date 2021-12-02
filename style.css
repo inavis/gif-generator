@@ -48,8 +48,8 @@
 } 
 .card:hover{
     /* opacity: 60%; */
-    background-color: rgba(144, 231, 136, 0.993);
-box-shadow: 1px 2px greenyellow;
+    background-color: black;
+box-shadow: 1px 2px black;
     transform: scale(1.5,1.5);
     z-index: 100;
 }
