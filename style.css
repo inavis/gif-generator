@@ -207,6 +207,9 @@ html{
     color: rgba(144, 231, 136, 0.993);
     border-radius: 10px;
 }
+.head:hover{
+    transform: skew(-20deg);
+}
 /* .head,.searchbtn,#searchbar{
     animation-name: example;
     animation-duration: 4s;
