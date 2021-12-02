@@ -8,7 +8,7 @@
 
 
 let searchbar = document.querySelector("#searchbar");
-let content = document.querySelector(".content");
+let subcon = document.querySelector(".subcon");
 let searchbtn = document.querySelector(".searchbtn");
 let value;
 
@@ -16,59 +16,55 @@ let value;
 function search(){
      value = searchbar.value.trim();
         if(value!=""){
-            //removes http or https if present
-            //if https://github.com -> github.com
-            //if https://www.w3schools.com -> www.w3schools.com
-            if(value.includes("https://")==true ){
-                value=value.split("https://")[1]
-             } 
-              else if(value.includes("http://")==true){
-                 value=value.split("http://")[1]
-                 console.log(value)
-                 }
-                 //removes if any extra parameters ,only till xyz.com/...
-                 // if enter "https://github.com/inavis/get-thirukural" -> gives github logo
-                 // if https://www.w3schools.com/jsref/jsref_includes.asp -> w3schools logo
-                if(value.includes("/")){
-                    value=value.split("/")[0];
-                } 
-             
-        // console.log(value)
+        // console.log(value);
          api(value)
         }else{
-            appear("Enter any domain name to search.It cannot be empty")
+            appear("Enter any category name to search.It cannot be empty")
             // alert("cannot be empty")
         }
     
 }
 
+// //https://api.giphy.com/v1/gifs/search?api_key=9wOPNY7hg3fKaO3WoTtidPM0FBkvgsur&q=food&limit=25&offset=0&rating=g&lang=en
+
 function api(value){
-    let url5 =`https://icon.horse/icon/${value}`
+let url5 =`https://api.giphy.com/v1/gifs/search?api_key=9wOPNY7hg3fKaO3WoTtidPM0FBkvgsur&q=${value}&limit=25&offset=0&rating=g&lang=en`
 fetch(url5)
+.then((data)=>(data.json()))
 .then(function(res){
-   // console.log(res.url)
-   let div = document.createElement("div");
-   div.classList="card m-5";
-   //recent results will be appended beforeprevious results
-   content.prepend(div)
-   let div1 = document.createElement("div");
-   div1.className="title"
-   div1.innerHTML=value;
-   div.appendChild(div1)
-   let div2 = document.createElement("div");
-   div2.className="icon";
+   console.log(res);
+if(res.data.length<1){
+    appear("No results found ");
+}else{
+     //remove the previous serach results
+     document.querySelector(".content").remove();
+    let content = document.createElement("div");
+    content.className="content";
+    subcon.appendChild(content);
+   for(x of res.data){
+    // console.log(x.embed_url)
+    //    console.log(x.id);
+    //    let url =x.url;
+     //  let url = `https://giphy.com/media/${x.id}/giphy-downsized.gif`;
+     let url = `https://media0.giphy.com/media/${x.id}/giphy.gif`;
+    //  console.log(url);
+    let div = document.createElement("div");
+   div.classList="card m-1";
+   content.appendChild(div)
    let img = document.createElement("img");
-   img.setAttribute("src",res.url);
-   img.setAttribute("height","200px")
-   img.setAttribute("width","200px")
-   div2.appendChild(img)
-   div.appendChild(div2);
+   img.setAttribute("src",url);
+//    img.setAttribute("height","200px")
+//    img.setAttribute("width","200px")
+   div.appendChild(img)
 
    searchbar.value=""
+   }    
+}
+   
 })
 .catch(function(err){
     console.log(err);
-    appear("Please check the entered URL again or failed to  load the resource");
+    appear("Some error occured");
     // alert("Please check the entered URL again or failed to  load the resource")
 })
 }
