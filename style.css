@@ -144,7 +144,7 @@
     width: 80%;
     }
    .head{
-    font-size: 50px;
+    font-size: 45px;
    }
    .explanation{
        font-size: 17px;
@@ -204,7 +204,7 @@ html{
     color: rgba(144, 231, 136, 0.993);
     border-radius: 10px;
 }
-.head,.searchbtn,#searchbar{
+/* .head,.searchbtn,#searchbar{
     animation-name: example;
     animation-duration: 4s;
     animation-delay: -2s;
@@ -216,7 +216,7 @@ html{
     50%  {transform: rotate(13deg); color:green;}
     75%  { transform: rotate(8deg); color: greenyellow;}
     100% {transform: rotate(1deg); color: darkseagreen;}
-  }
+  } */
   .text{
     animation-name: example2;
     animation-duration: 4s;
