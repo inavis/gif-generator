@@ -28,7 +28,7 @@ function search(){
 // //https://api.giphy.com/v1/gifs/search?api_key=9wOPNY7hg3fKaO3WoTtidPM0FBkvgsur&q=food&limit=25&offset=0&rating=g&lang=en
 
 function api(value){
-let url5 =`https://api.giphy.com/v1/gifs/search?api_key=9wOPNY7hg3fKaO3WoTtidPM0FBkvgsur&q=${value}&limit=25&offset=0&rating=g&lang=en`
+let url5 =`https://api.giphy.com/v1/gifs/search?api_key=9wOPNY7hg3fKaO3WoTtidPM0FBkvgsur&q=${value}&limit=30&offset=0&rating=g&lang=en`
 fetch(url5)
 .then((data)=>(data.json()))
 .then(function(res){
