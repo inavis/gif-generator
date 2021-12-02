@@ -49,6 +49,8 @@
 
 .content img{
     border-radius: 5px;
+    height: 150px;
+    width: 150px;
 }
 .explanation{
     color: black;
@@ -67,6 +69,9 @@
     }
     #confirm{
         left: 10%;
+    }
+    .content{
+        text-align: center;
     }
 
 }
@@ -88,6 +93,9 @@
     #confirm{
         left: 10%;
     }
+    .content{
+        text-align: center;
+    }
 }
 @media(min-width:501px) and (max-width:750px){
 
@@ -104,6 +112,9 @@
     }
     #confirm{
         left: 20%;
+    }
+    .content{
+        text-align: center;
     }
 }
 @media(min-width:751px) and (max-width:1000px){

@@ -48,8 +48,8 @@ fetch(url5)
    content.appendChild(div)
    let img = document.createElement("img");
    img.setAttribute("src",url);
-   img.setAttribute("height","200px")
-   img.setAttribute("width","200px")
+//    img.setAttribute("height","200px")
+//    img.setAttribute("width","200px")
    div.appendChild(img)
 
    searchbar.value=""
