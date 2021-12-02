@@ -8,6 +8,7 @@
     font-weight: bold;
     text-align: center;
     background-color: whitesmoke;
+   
 }
 #searchbar:hover{
     cursor: pointer;
@@ -28,6 +29,8 @@
 .searchbtn{
     background-color: white;
     border-radius: 10px;
+    
+
 }
 .searchbtn:hover{
     background-color: rgb(209, 202, 202);
@@ -200,9 +203,20 @@ html{
 .head{
     color: rgba(144, 231, 136, 0.993);
     border-radius: 10px;
-     transform: rotate(2deg);
-   
 }
+.head,.searchbtn,#searchbar,.card{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-direction: alternate;
+}
+@keyframes example {
+    0%   {transform: rotate(8deg); color: darkolivegreen;}
+    25%  { transform: rotate(16deg); color: darkgreen;}
+    50%  {transform: rotate(13deg); color:green;}
+    75%  { transform: rotate(8deg); color: greenyellow;}
+    100% {transform: rotate(1deg); color: darkseagreen;}
+  }
 /* .head1{
     writing-mode: vertical-rl;
 } */
