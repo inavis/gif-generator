@@ -208,8 +208,8 @@ html{
     animation-name: example;
     animation-duration: 4s;
     animation-delay: -2s;
-    animation-direction: alternate;
 }
+
 @keyframes example {
     0%   {transform: rotate(8deg); color: darkolivegreen;opacity:90%;}
     25%  { transform: rotate(16deg); color: darkgreen;opacity:70%;}
@@ -217,12 +217,25 @@ html{
     75%  { transform: rotate(8deg); color: greenyellow;opacity:30%;}
     100% {transform: rotate(1deg); color: darkseagreen;opacity: 100%;}
   }
+  .text{
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+}
+  @keyframes example2 {
+    0%   { color: darkolivegreen;}
+    25%  {  color: darkgreen;}
+    50%  { color:green;}
+    75%  {  color: greenyellow;}
+    100% { color: darkseagreen;}
+  }
 
   .card{
     animation-name: example1;
     animation-duration: 4s;
     animation-delay: -2s;
-    animation-direction: alternate;
+    
   }
   @keyframes example1 {
     0%   {opacity:90%;}
