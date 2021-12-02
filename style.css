@@ -47,8 +47,10 @@
     border-radius: 5px;
 } 
 .card:hover{
-    opacity: 60%;
+    /* opacity: 60%; */
     background-color: rgba(144, 231, 136, 0.993);
+    transform: scale(1.5,1.5);
+    z-index: 100;
 }
 
 .content img{
