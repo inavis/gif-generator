@@ -204,7 +204,7 @@ html{
     color: rgba(144, 231, 136, 0.993);
     border-radius: 10px;
 }
-.head,.searchbtn,#searchbar{
+.head{
     animation-name: example;
     animation-duration: 4s;
     animation-delay: -2s;
@@ -231,9 +231,9 @@ html{
     100% { color: rgb(123, 255, 0);}
   }
 
-  .card{
+  .card,.searchbtn,#searchbar{
     animation-name: example1;
-    animation-duration: 4s;
+    animation-duration: 7s;
     animation-delay: -2s;
     
   }
