@@ -188,7 +188,8 @@
 
 body{
     background-color: black;
+    /* border: 3px solid  gray; */
 }
 .head{
-    color: rgb(152, 137, 206);
+    color: rgba(144, 231, 136, 0.993);
 }
