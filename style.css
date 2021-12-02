@@ -204,19 +204,34 @@ html{
     color: rgba(144, 231, 136, 0.993);
     border-radius: 10px;
 }
-.head,.searchbtn,#searchbar,.card{
+.head,.searchbtn,#searchbar{
     animation-name: example;
     animation-duration: 4s;
     animation-delay: -2s;
     animation-direction: alternate;
 }
 @keyframes example {
-    0%   {transform: rotate(8deg); color: darkolivegreen;}
-    25%  { transform: rotate(16deg); color: darkgreen;}
-    50%  {transform: rotate(13deg); color:green;}
-    75%  { transform: rotate(8deg); color: greenyellow;}
-    100% {transform: rotate(1deg); color: darkseagreen;}
+    0%   {transform: rotate(8deg); color: darkolivegreen;opacity:90%;}
+    25%  { transform: rotate(16deg); color: darkgreen;opacity:70%;}
+    50%  {transform: rotate(13deg); color:green;opacity:50%;}
+    75%  { transform: rotate(8deg); color: greenyellow;opacity:30%;}
+    100% {transform: rotate(1deg); color: darkseagreen;opacity: 100%;}
   }
+
+  .card{
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-direction: alternate;
+  }
+  @keyframes example1 {
+    0%   {opacity:90%;}
+    25%  {opacity:70%;}
+    50%  {opacity:50%;}
+    75%  {opacity:30%;}
+    100% {opacity: 100%;}
+  }
+
 /* .head1{
     writing-mode: vertical-rl;
 } */
