@@ -238,11 +238,11 @@ html{
     
   }
   @keyframes example1 {
-    0%   {transform: rotate(8deg);opacity:90%;}
-    25%  {transform: rotate(16deg);opacity:70%;}
-    50%  {transform: rotate(13deg);opacity:50%;}
-    75%  {transform: rotate(8deg);opacity:40%;}
-    100% {transform: rotate(1deg);opacity: 100%;}
+    0%   {opacity:90%;}
+    25%  {opacity:70%;}
+    50%  {opacity:50%;}
+    75%  {opacity:40%;}
+    100% {opacity: 100%;}
   }
 
 /* .head1{
