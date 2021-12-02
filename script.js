@@ -39,7 +39,7 @@ if(res.data.length<1){
      //remove the previous serach results
      document.querySelector(".content").remove();
     let content = document.createElement("div");
-    content.className="content";
+    content.classList="content text-center";
     subcon.appendChild(content);
    for(x of res.data){
     // console.log(x.embed_url)
