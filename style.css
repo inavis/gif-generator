@@ -12,11 +12,11 @@
 }
 #searchbar:hover{
     cursor: pointer;
-    background-color: rgb(209, 202, 202);
+    background-color: rgba(144, 231, 136, 0.993);
 }
 #searchbar:focus{
-    border:2px solid rgba(144, 231, 136, 0.993);;
-    background-color: rgb(209, 202, 202);
+    border:2px solid gray;
+    background-color: rgba(144, 231, 136, 0.993);
 }
 
 #searchbar:disabled{
@@ -33,7 +33,7 @@
 
 }
 .searchbtn:hover{
-    background-color: rgb(209, 202, 202);
+    background-color: rgba(144, 231, 136, 0.993);
 }
 .searchbtn:disabled{
     background-color: rgb(209, 202, 202);
@@ -46,9 +46,10 @@
     background-color: gray;
     border-radius: 5px;
 } 
-/* .card:hover{
-    background-color: rgb(204, 196, 235);
-} */
+.card:hover{
+    opacity: 60%;
+    background-color: rgba(144, 231, 136, 0.993);
+}
 
 .content img{
     border-radius: 5px;
@@ -233,16 +234,16 @@ html{
 
   .card{
     animation-name: example1;
-    animation-duration: 7s;
+    animation-duration: 6s;
     animation-delay: -2s;
     
   }
   @keyframes example1 {
-    0%   {opacity:90%;}                 
-    25%  {opacity:70%;}
-    50%  {opacity:50%;}
-    75%  {opacity:40%;}
-    100% {opacity: 100%;}
+    0%   {opacity:90%;  transform: rotate(8deg);  }                 
+    25%  {opacity:70%;  transform: rotate(16deg); }
+    50%  {opacity:50%;  transform: rotate(13deg); }
+    75%  {opacity:40%;   transform: rotate(8deg);  }
+    100% {opacity: 100%;  transform: rotate(1deg);  }
   }
 
 /* .head1{
