@@ -36,28 +36,23 @@ fetch(url5)
    for(x of res.data){
     console.log(x.embed_url)
     
-    
+
        console.log(x.id);
     
     //    let url =x.url;
-       let url = `https://giphy.com/media/${x.id}/giphy-downsized.gif`;
-          let div = document.createElement("div");
-   div.classList="card m-5";
-   content.prepend(div)
-   let div1 = document.createElement("div");
-   div1.className="title"
-   div1.innerHTML=value;
-   div.appendChild(div1)
-   let div2 = document.createElement("div");
-   div2.className="icon";
+     //  let url = `https://giphy.com/media/${x.id}/giphy-downsized.gif`;
+     let url = `https://media0.giphy.com/media/${x.id}/giphy.gif`;
+     console.log(url)
+    let div = document.createElement("div");
+   div.classList="card m-1";
+   content.appendChild(div)
    let img = document.createElement("img");
    img.setAttribute("src",url);
    img.setAttribute("height","200px")
    img.setAttribute("width","200px")
-   div2.appendChild(img)
-   div.appendChild(div2);
+   div.appendChild(img)
 
-//    searchbar.value=""
+   searchbar.value=""
    }
    
 })
